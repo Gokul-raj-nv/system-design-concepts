@@ -81,19 +81,17 @@ Let:
 
 The updated token count is:
 
-\[
-B_{new} = \min(C,\ B+r\Delta t)
-\]
+
+B_{new} = min(C, B + r*Δt ) 
+
 
 ### Request Validation
 
-\[
+
 Request =
-\begin{cases}
-Allowed, & B_{new} \geq 1\\
+Allowed, & B_{new} >= 1
 Rejected, & B_{new} < 1
-\end{cases}
-\]
+
 
 If allowed, one token is deducted from the bucket.
 
